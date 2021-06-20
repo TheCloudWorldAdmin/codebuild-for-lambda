@@ -9,3 +9,7 @@ phases:
     commands:
     - echo "Deploying to the Lambda"
     - aws lambda update-function-code --function-name  hello_world --zip-file fileb://deployment_package.zip
+artifacts:
+  type: zip
+  paths:
+    - '*'
